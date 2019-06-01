@@ -21,6 +21,10 @@
 		8529B82422A2FBEF00EECE43 /* Memories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8529B82322A2FBEF00EECE43 /* Memories.storyboard */; };
 		8529B82622A2FC0B00EECE43 /* Pictures.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8529B82522A2FC0B00EECE43 /* Pictures.storyboard */; };
 		8529B82922A2FC1A00EECE43 /* Ideas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8529B82722A2FC1A00EECE43 /* Ideas.storyboard */; };
+		8529B82C22A2FEFD00EECE43 /* GalleryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8529B82A22A2FEFD00EECE43 /* GalleryViewCell.swift */; };
+		8529B82D22A2FEFD00EECE43 /* GalleryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8529B82B22A2FEFD00EECE43 /* GalleryViewCell.xib */; };
+		8529B82F22A3017100EECE43 /* MemoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8529B82E22A3017100EECE43 /* MemoriesTableViewCell.swift */; };
+		8529B83122A301DB00EECE43 /* IdeasTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8529B83022A301DB00EECE43 /* IdeasTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		8529B82322A2FBEF00EECE43 /* Memories.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Memories.storyboard; sourceTree = "<group>"; };
 		8529B82522A2FC0B00EECE43 /* Pictures.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pictures.storyboard; sourceTree = "<group>"; };
 		8529B82822A2FC1A00EECE43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Memories/Base.lproj/Ideas.storyboard; sourceTree = "<group>"; };
+		8529B82A22A2FEFD00EECE43 /* GalleryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewCell.swift; sourceTree = "<group>"; };
+		8529B82B22A2FEFD00EECE43 /* GalleryViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryViewCell.xib; sourceTree = "<group>"; };
+		8529B82E22A3017100EECE43 /* MemoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoriesTableViewCell.swift; sourceTree = "<group>"; };
+		8529B83022A301DB00EECE43 /* IdeasTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeasTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				8529B82722A2FC1A00EECE43 /* Ideas.storyboard */,
+				8529B83022A301DB00EECE43 /* IdeasTableCell.swift */,
 				8529B82122A2F9C200EECE43 /* IdeasViewController.swift */,
 			);
 			path = Ideas;
@@ -156,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				8529B82322A2FBEF00EECE43 /* Memories.storyboard */,
+				8529B82E22A3017100EECE43 /* MemoriesTableViewCell.swift */,
 				8529B81F22A2F9B300EECE43 /* MemoriesViewController.swift */,
 			);
 			path = Memories;
@@ -165,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				8529B82522A2FC0B00EECE43 /* Pictures.storyboard */,
+				8529B82A22A2FEFD00EECE43 /* GalleryViewCell.swift */,
+				8529B82B22A2FEFD00EECE43 /* GalleryViewCell.xib */,
 				8529B81D22A2F9A200EECE43 /* PicturesViewController.swift */,
 			);
 			path = Pictures;
@@ -275,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8529B7F722A2F7D300EECE43 /* LaunchScreen.storyboard in Resources */,
+				8529B82D22A2FEFD00EECE43 /* GalleryViewCell.xib in Resources */,
 				8529B7F422A2F7D300EECE43 /* Assets.xcassets in Resources */,
 				8529B7EF22A2F7D200EECE43 /* Main.storyboard in Resources */,
 				8529B82622A2FC0B00EECE43 /* Pictures.storyboard in Resources */,
@@ -306,8 +319,11 @@
 			files = (
 				8529B7EC22A2F7D200EECE43 /* ViewController.swift in Sources */,
 				8529B82222A2F9C200EECE43 /* IdeasViewController.swift in Sources */,
+				8529B82F22A3017100EECE43 /* MemoriesTableViewCell.swift in Sources */,
 				8529B82022A2F9B300EECE43 /* MemoriesViewController.swift in Sources */,
+				8529B83122A301DB00EECE43 /* IdeasTableCell.swift in Sources */,
 				8529B81E22A2F9A200EECE43 /* PicturesViewController.swift in Sources */,
+				8529B82C22A2FEFD00EECE43 /* GalleryViewCell.swift in Sources */,
 				8529B7EA22A2F7D200EECE43 /* AppDelegate.swift in Sources */,
 				8529B7F222A2F7D200EECE43 /* Memories.xcdatamodeld in Sources */,
 			);
