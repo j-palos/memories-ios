@@ -8,12 +8,29 @@
 
 import UIKit
 
-class PicturesViewController: UIViewController {
+class PicturesViewController: UIViewController , UICollectionViewDataSource, UICollectionViewDelegate{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1;
+    }
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GalleryCell", for: indexPath) as! GalleryViewCell
+        //access the image in the cell
+        let img:UIImage = UIImage(named: "DSC_0502 - fixed")!
+        
+        cell.setupCell(left:img , midTop: img, midBot: img, right: img)
+        
+        return cell
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.reloadData()
+        
     }
     
 
